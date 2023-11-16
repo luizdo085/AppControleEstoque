@@ -95,5 +95,10 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
             }
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

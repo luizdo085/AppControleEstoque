@@ -19,7 +19,7 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
             InitializeComponent();
         }
 
-       
+
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
@@ -77,7 +77,7 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
             tabfornecedores.SelectedTab = tabPage1;
         }
 
-        
+
 
 
 

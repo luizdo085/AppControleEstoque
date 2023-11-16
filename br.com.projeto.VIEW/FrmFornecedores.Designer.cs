@@ -84,8 +84,9 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(923, 92);
+            panel1.Size = new Size(1055, 123);
             panel1.TabIndex = 1;
             // 
             // label1
@@ -94,21 +95,24 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(269, 32);
+            label1.Location = new Point(307, 43);
             label1.Name = "label1";
-            label1.Size = new Size(323, 32);
+            label1.Size = new Size(402, 40);
             label1.TabIndex = 0;
             label1.Text = "Cadastro Fornecedores";
             // 
             // tabfornecedores
             // 
+            tabfornecedores.Appearance = TabAppearance.Buttons;
             tabfornecedores.Controls.Add(tabPage1);
             tabfornecedores.Controls.Add(tabConsulta);
+            tabfornecedores.Cursor = Cursors.Hand;
             tabfornecedores.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tabfornecedores.Location = new Point(12, 112);
+            tabfornecedores.Location = new Point(14, 149);
+            tabfornecedores.Margin = new Padding(3, 4, 3, 4);
             tabfornecedores.Name = "tabfornecedores";
             tabfornecedores.SelectedIndex = 0;
-            tabfornecedores.Size = new Size(886, 269);
+            tabfornecedores.Size = new Size(1013, 359);
             tabfornecedores.TabIndex = 28;
             // 
             // tabPage1
@@ -141,10 +145,11 @@
             tabPage1.Controls.Add(txtcep);
             tabPage1.Controls.Add(label8);
             tabPage1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tabPage1.Location = new Point(4, 27);
+            tabPage1.Location = new Point(4, 35);
+            tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(878, 238);
+            tabPage1.Padding = new Padding(3, 4, 3, 4);
+            tabPage1.Size = new Size(1005, 320);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados Pessoais";
             tabPage1.UseVisualStyleBackColor = true;
@@ -155,9 +160,10 @@
             btnbuscar.FlatStyle = FlatStyle.Flat;
             btnbuscar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnbuscar.ForeColor = Color.White;
-            btnbuscar.Location = new Point(227, 116);
+            btnbuscar.Location = new Point(259, 155);
+            btnbuscar.Margin = new Padding(3, 4, 3, 4);
             btnbuscar.Name = "btnbuscar";
-            btnbuscar.Size = new Size(113, 26);
+            btnbuscar.Size = new Size(129, 35);
             btnbuscar.TabIndex = 32;
             btnbuscar.Text = "PESQUISAR";
             btnbuscar.UseVisualStyleBackColor = false;
@@ -168,9 +174,10 @@
             cmbestado.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbestado.FormattingEnabled = true;
             cmbestado.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
-            cmbestado.Location = new Point(766, 175);
+            cmbestado.Location = new Point(875, 233);
+            cmbestado.Margin = new Padding(3, 4, 3, 4);
             cmbestado.Name = "cmbestado";
-            cmbestado.Size = new Size(96, 26);
+            cmbestado.Size = new Size(109, 31);
             cmbestado.TabIndex = 26;
             // 
             // label2
@@ -178,9 +185,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Navy;
-            label2.Location = new Point(9, 26);
+            label2.Location = new Point(10, 35);
             label2.Name = "label2";
-            label2.Size = new Size(64, 18);
+            label2.Size = new Size(78, 23);
             label2.TabIndex = 1;
             label2.Text = "Código:";
             // 
@@ -188,9 +195,10 @@
             // 
             txtcodigo.Enabled = false;
             txtcodigo.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcodigo.Location = new Point(76, 20);
+            txtcodigo.Location = new Point(87, 27);
+            txtcodigo.Margin = new Padding(3, 4, 3, 4);
             txtcodigo.Name = "txtcodigo";
-            txtcodigo.Size = new Size(101, 26);
+            txtcodigo.Size = new Size(115, 30);
             txtcodigo.TabIndex = 2;
             // 
             // label14
@@ -198,26 +206,28 @@
             label14.AutoSize = true;
             label14.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label14.ForeColor = Color.Navy;
-            label14.Location = new Point(701, 183);
+            label14.Location = new Point(801, 244);
             label14.Name = "label14";
-            label14.Size = new Size(62, 18);
+            label14.Size = new Size(78, 23);
             label14.TabIndex = 25;
             label14.Text = "Estado:";
             // 
             // txtnome
             // 
             txtnome.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtnome.Location = new Point(76, 52);
+            txtnome.Location = new Point(87, 69);
+            txtnome.Margin = new Padding(3, 4, 3, 4);
             txtnome.Name = "txtnome";
-            txtnome.Size = new Size(375, 26);
+            txtnome.Size = new Size(428, 30);
             txtnome.TabIndex = 4;
             // 
             // txtcidade
             // 
             txtcidade.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcidade.Location = new Point(591, 177);
+            txtcidade.Location = new Point(675, 236);
+            txtcidade.Margin = new Padding(3, 4, 3, 4);
             txtcidade.Name = "txtcidade";
-            txtcidade.Size = new Size(101, 26);
+            txtcidade.Size = new Size(115, 30);
             txtcidade.TabIndex = 24;
             // 
             // label3
@@ -225,9 +235,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Navy;
-            label3.Location = new Point(19, 55);
+            label3.Location = new Point(22, 73);
             label3.Name = "label3";
-            label3.Size = new Size(54, 18);
+            label3.Size = new Size(67, 23);
             label3.TabIndex = 3;
             label3.Text = "Nome:";
             // 
@@ -236,9 +246,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.Navy;
-            label13.Location = new Point(524, 183);
+            label13.Location = new Point(599, 244);
             label13.Name = "label13";
-            label13.Size = new Size(64, 18);
+            label13.Size = new Size(78, 23);
             label13.TabIndex = 23;
             label13.Text = "Cidade:";
             // 
@@ -247,27 +257,29 @@
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Navy;
-            label4.Location = new Point(470, 55);
+            label4.Location = new Point(537, 73);
             label4.Name = "label4";
-            label4.Size = new Size(54, 18);
+            label4.Size = new Size(66, 23);
             label4.TabIndex = 5;
             label4.Text = "CNPJ:";
             // 
             // txtbairro
             // 
             txtbairro.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtbairro.Location = new Point(390, 177);
+            txtbairro.Location = new Point(446, 236);
+            txtbairro.Margin = new Padding(3, 4, 3, 4);
             txtbairro.Name = "txtbairro";
-            txtbairro.Size = new Size(125, 26);
+            txtbairro.Size = new Size(142, 30);
             txtbairro.TabIndex = 22;
             // 
             // txtcnpj
             // 
             txtcnpj.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcnpj.Location = new Point(530, 52);
+            txtcnpj.Location = new Point(606, 69);
+            txtcnpj.Margin = new Padding(3, 4, 3, 4);
             txtcnpj.Mask = "##.###.###/####-##";
             txtcnpj.Name = "txtcnpj";
-            txtcnpj.Size = new Size(152, 26);
+            txtcnpj.Size = new Size(173, 30);
             txtcnpj.TabIndex = 6;
             // 
             // label12
@@ -275,26 +287,28 @@
             label12.AutoSize = true;
             label12.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.Navy;
-            label12.Location = new Point(337, 183);
+            label12.Location = new Point(385, 244);
             label12.Name = "label12";
-            label12.Size = new Size(55, 18);
+            label12.Size = new Size(69, 23);
             label12.TabIndex = 21;
             label12.Text = "Bairro:";
             // 
             // txtemail
             // 
             txtemail.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtemail.Location = new Point(483, 84);
+            txtemail.Location = new Point(552, 112);
+            txtemail.Margin = new Padding(3, 4, 3, 4);
             txtemail.Name = "txtemail";
-            txtemail.Size = new Size(379, 26);
+            txtemail.Size = new Size(433, 30);
             txtemail.TabIndex = 12;
             // 
             // txtcomplemento
             // 
             txtcomplemento.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcomplemento.Location = new Point(120, 177);
+            txtcomplemento.Location = new Point(137, 236);
+            txtcomplemento.Margin = new Padding(3, 4, 3, 4);
             txtcomplemento.Name = "txtcomplemento";
-            txtcomplemento.Size = new Size(208, 26);
+            txtcomplemento.Size = new Size(237, 30);
             txtcomplemento.TabIndex = 20;
             // 
             // label5
@@ -302,9 +316,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Navy;
-            label5.Location = new Point(208, 90);
+            label5.Location = new Point(238, 120);
             label5.Name = "label5";
-            label5.Size = new Size(61, 18);
+            label5.Size = new Size(77, 23);
             label5.TabIndex = 7;
             label5.Text = "Celular:";
             // 
@@ -313,27 +327,29 @@
             label11.AutoSize = true;
             label11.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.Navy;
-            label11.Location = new Point(18, 183);
+            label11.Location = new Point(21, 244);
             label11.Name = "label11";
-            label11.Size = new Size(110, 18);
+            label11.Size = new Size(137, 23);
             label11.TabIndex = 19;
             label11.Text = "Complemento:";
             // 
             // txtcelular
             // 
             txtcelular.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcelular.Location = new Point(273, 84);
+            txtcelular.Location = new Point(312, 112);
+            txtcelular.Margin = new Padding(3, 4, 3, 4);
             txtcelular.Mask = "(##) #####-####";
             txtcelular.Name = "txtcelular";
-            txtcelular.Size = new Size(131, 26);
+            txtcelular.Size = new Size(149, 30);
             txtcelular.TabIndex = 8;
             // 
             // txtnumero
             // 
             txtnumero.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtnumero.Location = new Point(574, 145);
+            txtnumero.Location = new Point(656, 193);
+            txtnumero.Margin = new Padding(3, 4, 3, 4);
             txtnumero.Name = "txtnumero";
-            txtnumero.Size = new Size(118, 26);
+            txtnumero.Size = new Size(134, 30);
             txtnumero.TabIndex = 18;
             // 
             // label6
@@ -341,9 +357,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Navy;
-            label6.Location = new Point(3, 90);
+            label6.Location = new Point(3, 120);
             label6.Name = "label6";
-            label6.Size = new Size(70, 18);
+            label6.Size = new Size(90, 23);
             label6.TabIndex = 9;
             label6.Text = "Telefone:";
             // 
@@ -352,27 +368,29 @@
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.Navy;
-            label10.Location = new Point(504, 150);
+            label10.Location = new Point(576, 200);
             label10.Name = "label10";
-            label10.Size = new Size(67, 18);
+            label10.Size = new Size(85, 23);
             label10.TabIndex = 17;
             label10.Text = "Número:";
             // 
             // txttelefone
             // 
             txttelefone.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txttelefone.Location = new Point(76, 84);
+            txttelefone.Location = new Point(87, 112);
+            txttelefone.Margin = new Padding(3, 4, 3, 4);
             txttelefone.Mask = "(##) ####-####";
             txttelefone.Name = "txttelefone";
-            txttelefone.Size = new Size(123, 26);
+            txttelefone.Size = new Size(140, 30);
             txttelefone.TabIndex = 10;
             // 
             // txtendereco
             // 
             txtendereco.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtendereco.Location = new Point(120, 145);
+            txtendereco.Location = new Point(137, 193);
+            txtendereco.Margin = new Padding(3, 4, 3, 4);
             txtendereco.Name = "txtendereco";
-            txtendereco.Size = new Size(375, 26);
+            txtendereco.Size = new Size(428, 30);
             txtendereco.TabIndex = 16;
             // 
             // label9
@@ -380,9 +398,9 @@
             label9.AutoSize = true;
             label9.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.Navy;
-            label9.Location = new Point(37, 150);
+            label9.Location = new Point(42, 200);
             label9.Name = "label9";
-            label9.Size = new Size(80, 18);
+            label9.Size = new Size(100, 23);
             label9.TabIndex = 15;
             label9.Text = "Endereço:";
             // 
@@ -391,19 +409,20 @@
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Navy;
-            label7.Location = new Point(423, 90);
+            label7.Location = new Point(483, 120);
             label7.Name = "label7";
-            label7.Size = new Size(57, 18);
+            label7.Size = new Size(71, 23);
             label7.TabIndex = 11;
             label7.Text = "E-mail:";
             // 
             // txtcep
             // 
             txtcep.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcep.Location = new Point(120, 116);
+            txtcep.Location = new Point(137, 155);
+            txtcep.Margin = new Padding(3, 4, 3, 4);
             txtcep.Mask = "#####-###";
             txtcep.Name = "txtcep";
-            txtcep.Size = new Size(101, 26);
+            txtcep.Size = new Size(115, 30);
             txtcep.TabIndex = 14;
             // 
             // label8
@@ -411,9 +430,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Navy;
-            label8.Location = new Point(71, 124);
+            label8.Location = new Point(81, 165);
             label8.Name = "label8";
-            label8.Size = new Size(46, 18);
+            label8.Size = new Size(56, 23);
             label8.TabIndex = 13;
             label8.Text = "CEP:";
             // 
@@ -424,10 +443,11 @@
             tabConsulta.Controls.Add(label15);
             tabConsulta.Controls.Add(txtpesquisa);
             tabConsulta.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tabConsulta.Location = new Point(4, 27);
+            tabConsulta.Location = new Point(4, 35);
+            tabConsulta.Margin = new Padding(3, 4, 3, 4);
             tabConsulta.Name = "tabConsulta";
-            tabConsulta.Padding = new Padding(3);
-            tabConsulta.Size = new Size(878, 238);
+            tabConsulta.Padding = new Padding(3, 4, 3, 4);
+            tabConsulta.Size = new Size(1005, 320);
             tabConsulta.TabIndex = 1;
             tabConsulta.Text = "Consulta";
             tabConsulta.UseVisualStyleBackColor = true;
@@ -437,11 +457,13 @@
             tabelafornecedores.AllowUserToAddRows = false;
             tabelafornecedores.AllowUserToDeleteRows = false;
             tabelafornecedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tabelafornecedores.Location = new Point(9, 54);
+            tabelafornecedores.Location = new Point(10, 72);
+            tabelafornecedores.Margin = new Padding(3, 4, 3, 4);
             tabelafornecedores.Name = "tabelafornecedores";
             tabelafornecedores.ReadOnly = true;
+            tabelafornecedores.RowHeadersWidth = 51;
             tabelafornecedores.RowTemplate.Height = 25;
-            tabelafornecedores.Size = new Size(863, 181);
+            tabelafornecedores.Size = new Size(986, 241);
             tabelafornecedores.TabIndex = 33;
             tabelafornecedores.CellClick += tabelafornecedores_CellClick;
             // 
@@ -452,9 +474,10 @@
             btnpesquisar.FlatStyle = FlatStyle.Flat;
             btnpesquisar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnpesquisar.ForeColor = Color.White;
-            btnpesquisar.Location = new Point(580, 18);
+            btnpesquisar.Location = new Point(663, 24);
+            btnpesquisar.Margin = new Padding(3, 4, 3, 4);
             btnpesquisar.Name = "btnpesquisar";
-            btnpesquisar.Size = new Size(95, 30);
+            btnpesquisar.Size = new Size(109, 40);
             btnpesquisar.TabIndex = 32;
             btnpesquisar.Text = "Pesquisar";
             btnpesquisar.UseVisualStyleBackColor = false;
@@ -465,18 +488,19 @@
             label15.AutoSize = true;
             label15.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.Navy;
-            label15.Location = new Point(36, 27);
+            label15.Location = new Point(41, 36);
             label15.Name = "label15";
-            label15.Size = new Size(54, 18);
+            label15.Size = new Size(67, 23);
             label15.TabIndex = 3;
             label15.Text = "Nome:";
             // 
             // txtpesquisa
             // 
             txtpesquisa.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtpesquisa.Location = new Point(96, 21);
+            txtpesquisa.Location = new Point(110, 28);
+            txtpesquisa.Margin = new Padding(3, 4, 3, 4);
             txtpesquisa.Name = "txtpesquisa";
-            txtpesquisa.Size = new Size(478, 26);
+            txtpesquisa.Size = new Size(546, 30);
             txtpesquisa.TabIndex = 4;
             // 
             // panel2
@@ -486,9 +510,10 @@
             panel2.Controls.Add(btnnovo);
             panel2.Controls.Add(btnsalvar);
             panel2.Controls.Add(btnexcluir);
-            panel2.Location = new Point(-3, 394);
+            panel2.Location = new Point(-3, 525);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(928, 40);
+            panel2.Size = new Size(1061, 53);
             panel2.TabIndex = 33;
             // 
             // btneditar
@@ -497,9 +522,10 @@
             btneditar.FlatStyle = FlatStyle.Flat;
             btneditar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btneditar.ForeColor = Color.White;
-            btneditar.Location = new Point(558, 5);
+            btneditar.Location = new Point(638, 7);
+            btneditar.Margin = new Padding(3, 4, 3, 4);
             btneditar.Name = "btneditar";
-            btneditar.Size = new Size(95, 30);
+            btneditar.Size = new Size(109, 40);
             btneditar.TabIndex = 31;
             btneditar.Text = "EDITAR";
             btneditar.UseVisualStyleBackColor = false;
@@ -512,9 +538,10 @@
             btnnovo.FlatStyle = FlatStyle.Flat;
             btnnovo.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnnovo.ForeColor = Color.White;
-            btnnovo.Location = new Point(255, 5);
+            btnnovo.Location = new Point(291, 7);
+            btnnovo.Margin = new Padding(3, 4, 3, 4);
             btnnovo.Name = "btnnovo";
-            btnnovo.Size = new Size(95, 30);
+            btnnovo.Size = new Size(109, 40);
             btnnovo.TabIndex = 28;
             btnnovo.Text = "NOVO";
             btnnovo.UseVisualStyleBackColor = false;
@@ -526,9 +553,10 @@
             btnsalvar.FlatStyle = FlatStyle.Flat;
             btnsalvar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnsalvar.ForeColor = Color.White;
-            btnsalvar.Location = new Point(356, 5);
+            btnsalvar.Location = new Point(407, 7);
+            btnsalvar.Margin = new Padding(3, 4, 3, 4);
             btnsalvar.Name = "btnsalvar";
-            btnsalvar.Size = new Size(95, 30);
+            btnsalvar.Size = new Size(109, 40);
             btnsalvar.TabIndex = 29;
             btnsalvar.Text = "SALVAR";
             btnsalvar.UseVisualStyleBackColor = false;
@@ -540,9 +568,10 @@
             btnexcluir.FlatStyle = FlatStyle.Flat;
             btnexcluir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnexcluir.ForeColor = Color.White;
-            btnexcluir.Location = new Point(457, 5);
+            btnexcluir.Location = new Point(522, 7);
+            btnexcluir.Margin = new Padding(3, 4, 3, 4);
             btnexcluir.Name = "btnexcluir";
-            btnexcluir.Size = new Size(95, 30);
+            btnexcluir.Size = new Size(109, 40);
             btnexcluir.TabIndex = 30;
             btnexcluir.Text = "EXCLUIR";
             btnexcluir.UseVisualStyleBackColor = false;
@@ -550,12 +579,15 @@
             // 
             // FrmFornecedores
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(923, 450);
+            ClientSize = new Size(1055, 600);
             Controls.Add(panel2);
             Controls.Add(tabfornecedores);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "FrmFornecedores";
             Text = "Cadastro Fornecedores";
             Load += FrmFornecedores_Load;
