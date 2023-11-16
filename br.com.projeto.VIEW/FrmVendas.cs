@@ -228,7 +228,15 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
 
         private void btncancelarvenda_Click(object sender, EventArgs e)
         {
-
+            //fechar e abrir aplicação
+            DialogResult result = MessageBox.Show("Deseja cancelar a venda?", "ATENÇÃO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                FrmVendas venda = new FrmVendas(funcionario_id);
+                //Application.Exit();
+                this.Dispose();
+                venda.ShowDialog();
+            }
         }
 
         private void rbtnentrega_CheckedChanged(object sender, EventArgs e)

@@ -503,6 +503,7 @@
             btneditar.TabIndex = 31;
             btneditar.Text = "EDITAR";
             btneditar.UseVisualStyleBackColor = false;
+            btneditar.Click += btneditar_Click_1;
             // 
             // btnnovo
             // 
@@ -517,6 +518,7 @@
             btnnovo.TabIndex = 28;
             btnnovo.Text = "NOVO";
             btnnovo.UseVisualStyleBackColor = false;
+            btnnovo.Click += btnnovo_Click_1;
             // 
             // btnsalvar
             // 
@@ -530,6 +532,7 @@
             btnsalvar.TabIndex = 29;
             btnsalvar.Text = "SALVAR";
             btnsalvar.UseVisualStyleBackColor = false;
+            btnsalvar.Click += btnsalvar_Click_1;
             // 
             // btnexcluir
             // 
@@ -543,6 +546,7 @@
             btnexcluir.TabIndex = 30;
             btnexcluir.Text = "EXCLUIR";
             btnexcluir.UseVisualStyleBackColor = false;
+            btnexcluir.Click += btnexcluir_Click_1;
             // 
             // FrmFornecedores
             // 

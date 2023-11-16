@@ -216,5 +216,19 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
         {
 
         }
+
+        private void MenuTrocaUsuario_Click(object sender, EventArgs e)
+        {
+            
+            //fechar aplicação
+            DialogResult result = MessageBox.Show("Você deseja trocar de usuário?", "ATENÇÃO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                FrmLogin login = new FrmLogin();
+                //Application.Exit();
+                this.Dispose();
+                login.ShowDialog();
+            }
+        }
     }
 }

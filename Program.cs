@@ -14,8 +14,8 @@ namespace AppGASeAGUA
             // see https://aka.ms/applicationconfiguration.
             Application.EnableVisualStyles();
             ApplicationConfiguration.Initialize();
-            int funcionario = 1; string nivel = "Administrador"; string bla = "";
-            Application.Run(new FrmMenu(funcionario, nivel));
+            int funcionario = 1; string nivel = "Administrador"; 
+            Application.Run(new FrmLogin());
         }
     }
 }

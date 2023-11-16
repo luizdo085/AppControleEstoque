@@ -253,6 +253,7 @@
             MenuTrocaUsuario.Name = "MenuTrocaUsuario";
             MenuTrocaUsuario.Size = new Size(247, 26);
             MenuTrocaUsuario.Text = "Trocar de Usuario";
+            MenuTrocaUsuario.Click += MenuTrocaUsuario_Click;
             // 
             // MenuSair
             // 
