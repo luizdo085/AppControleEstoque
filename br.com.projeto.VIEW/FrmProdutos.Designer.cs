@@ -167,7 +167,7 @@
             // 
             lblFornecedores.AutoSize = true;
             lblFornecedores.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFornecedores.ForeColor = Color.MediumTurquoise;
+            lblFornecedores.ForeColor = Color.Navy;
             lblFornecedores.Location = new Point(29, 195);
             lblFornecedores.Name = "lblFornecedores";
             lblFornecedores.Size = new Size(138, 23);
@@ -224,7 +224,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.MediumTurquoise;
+            label8.ForeColor = Color.Navy;
             label8.Location = new Point(593, 81);
             label8.Name = "label8";
             label8.Size = new Size(107, 23);
@@ -235,7 +235,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.MediumTurquoise;
+            label9.ForeColor = Color.Navy;
             label9.Location = new Point(81, 28);
             label9.Name = "label9";
             label9.Size = new Size(78, 23);
@@ -246,7 +246,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.MediumTurquoise;
+            label10.ForeColor = Color.Navy;
             label10.Location = new Point(58, 81);
             label10.Name = "label10";
             label10.Size = new Size(104, 23);
@@ -257,7 +257,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.MediumTurquoise;
+            label11.ForeColor = Color.Navy;
             label11.Location = new Point(41, 140);
             label11.Name = "label11";
             label11.Size = new Size(127, 23);

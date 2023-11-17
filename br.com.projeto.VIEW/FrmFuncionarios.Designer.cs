@@ -221,7 +221,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label18.ForeColor = Color.Navy;
-            label18.Location = new Point(607, 272);
+            label18.Location = new Point(601, 272);
             label18.Name = "label18";
             label18.Size = new Size(157, 23);
             label18.TabIndex = 31;

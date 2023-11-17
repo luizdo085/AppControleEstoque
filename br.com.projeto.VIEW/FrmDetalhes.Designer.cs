@@ -61,7 +61,7 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(5, 5, 5, 5);
+            panel1.Margin = new Padding(5);
             panel1.Name = "panel1";
             panel1.Size = new Size(933, 147);
             panel1.TabIndex = 4;
@@ -108,6 +108,7 @@
             // 
             // txtfuncionario
             // 
+            txtfuncionario.BackColor = Color.White;
             txtfuncionario.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtfuncionario.Location = new Point(117, 75);
             txtfuncionario.Margin = new Padding(3, 4, 3, 4);
@@ -129,6 +130,7 @@
             // 
             // txtentrega_retirada
             // 
+            txtentrega_retirada.BackColor = Color.White;
             txtentrega_retirada.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtentrega_retirada.Location = new Point(760, 75);
             txtentrega_retirada.Margin = new Padding(3, 4, 3, 4);
@@ -139,6 +141,7 @@
             // 
             // txtdata
             // 
+            txtdata.BackColor = Color.White;
             txtdata.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtdata.Location = new Point(475, 75);
             txtdata.Margin = new Padding(3, 4, 3, 4);
@@ -160,6 +163,7 @@
             // 
             // txtforma_pagamento
             // 
+            txtforma_pagamento.BackColor = Color.White;
             txtforma_pagamento.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtforma_pagamento.Location = new Point(649, 32);
             txtforma_pagamento.Margin = new Padding(3, 4, 3, 4);
@@ -181,6 +185,7 @@
             // 
             // txtobs
             // 
+            txtobs.BackColor = Color.White;
             txtobs.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtobs.Location = new Point(72, 160);
             txtobs.Margin = new Padding(3, 4, 3, 4);
@@ -192,6 +197,7 @@
             // 
             // txttotalvenda
             // 
+            txttotalvenda.BackColor = Color.White;
             txttotalvenda.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txttotalvenda.Location = new Point(746, 117);
             txttotalvenda.Margin = new Padding(3, 4, 3, 4);
@@ -237,6 +243,7 @@
             // 
             // txtcliente
             // 
+            txtcliente.BackColor = Color.White;
             txtcliente.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtcliente.Location = new Point(72, 32);
             txtcliente.Margin = new Padding(3, 4, 3, 4);

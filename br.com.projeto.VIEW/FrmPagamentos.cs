@@ -177,7 +177,7 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
 
         private void btnimpimir_Click(object sender, EventArgs e)
         {
-            
+
 
             ImprimeVenda.Print();
 
@@ -187,9 +187,9 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
         private void ImprimeVenda_PrintPage(System.Object sender, PrintPageEventArgs e)
         {
             string texto = (@"LGG ÁGUA E GÁS
-Cliente: " + 
+Cliente: " +
                 "Entrega" +
-                "Endereço: Humberto Raul"+
+                "Endereço: Humberto Raul" +
                 "Total é: " + txttotal.Text);
             Font tipo_fonte = new Font("Arial", 16, FontStyle.Regular, GraphicsUnit.Pixel);
             SolidBrush cor = new SolidBrush(Color.Black);
@@ -197,7 +197,7 @@ Cliente: " +
 
             e.Graphics.DrawString(texto, tipo_fonte, cor, local);
         }
-               
+
 
     }
 }

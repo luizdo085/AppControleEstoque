@@ -39,9 +39,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(131, 82);
+            label1.Location = new Point(150, 109);
             label1.Name = "label1";
-            label1.Size = new Size(198, 29);
+            label1.Size = new Size(243, 35);
             label1.TabIndex = 0;
             label1.Text = "TELA DE LOGIN";
             // 
@@ -50,9 +50,10 @@
             txtemail.BackColor = Color.MidnightBlue;
             txtemail.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             txtemail.ForeColor = Color.White;
-            txtemail.Location = new Point(62, 136);
+            txtemail.Location = new Point(71, 181);
+            txtemail.Margin = new Padding(3, 4, 3, 4);
             txtemail.Name = "txtemail";
-            txtemail.Size = new Size(327, 32);
+            txtemail.Size = new Size(373, 38);
             txtemail.TabIndex = 1;
             txtemail.Text = "Digite seu e-mail";
             txtemail.Click += txtemail_Click;
@@ -62,9 +63,10 @@
             txtsenha.BackColor = Color.MidnightBlue;
             txtsenha.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             txtsenha.ForeColor = Color.White;
-            txtsenha.Location = new Point(62, 183);
+            txtsenha.Location = new Point(71, 244);
+            txtsenha.Margin = new Padding(3, 4, 3, 4);
             txtsenha.Name = "txtsenha";
-            txtsenha.Size = new Size(327, 32);
+            txtsenha.Size = new Size(373, 38);
             txtsenha.TabIndex = 2;
             txtsenha.Text = "Digite sua senha";
             txtsenha.Click += txtsenha_Click;
@@ -72,10 +74,12 @@
             // btnentrar
             // 
             btnentrar.BackColor = Color.Red;
+            btnentrar.FlatStyle = FlatStyle.Flat;
             btnentrar.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnentrar.Location = new Point(174, 247);
+            btnentrar.Location = new Point(200, 327);
+            btnentrar.Margin = new Padding(3, 4, 3, 4);
             btnentrar.Name = "btnentrar";
-            btnentrar.Size = new Size(104, 36);
+            btnentrar.Size = new Size(119, 48);
             btnentrar.TabIndex = 3;
             btnentrar.Text = "ENTRAR";
             btnentrar.UseVisualStyleBackColor = false;
@@ -83,15 +87,17 @@
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fundo_login;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnentrar);
             Controls.Add(txtsenha);
             Controls.Add(txtemail);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "FrmLogin";
             Text = "Seja bem-vindo ao sistema";
             Load += FrmLogin_Load;
