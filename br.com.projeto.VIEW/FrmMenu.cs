@@ -21,6 +21,7 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
             this.id_funcionario = id_funcionario;
             this.nivel = nivel;
             InitializeComponent();
+            
         }
 
         private void cadastrarClientesToolStripMenuItem_Click(object sender, EventArgs e)

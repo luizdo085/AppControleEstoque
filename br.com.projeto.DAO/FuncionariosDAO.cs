@@ -122,7 +122,7 @@ namespace AppGASeAGUA.br.com.projeto.DAO
                 //1 passo criar data table retorno e cmd sql
                 DataTable tabelafuncionarios = new DataTable();
 
-                string sql = "select * from tb_Funcionarios";
+                string sql = "select * from tb_funcionarios";
 
                 //2 passo é organozar o cmd sql e executar
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
