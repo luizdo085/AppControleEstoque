@@ -85,7 +85,7 @@
             panel1.Location = new Point(-59, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1741, 123);
+            panel1.Size = new Size(1940, 123);
             panel1.TabIndex = 2;
             // 
             // label2
@@ -94,7 +94,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Arial", 36F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(541, 23);
+            label2.Location = new Point(808, 19);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
             label2.Size = new Size(477, 70);
@@ -122,11 +122,11 @@
             groupBox1.Controls.Add(txtendereco);
             groupBox1.Controls.Add(txtcpf);
             groupBox1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox1.Location = new Point(43, 167);
+            groupBox1.Location = new Point(147, 168);
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(587, 269);
+            groupBox1.Size = new Size(737, 269);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Cliente";
@@ -347,11 +347,11 @@
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label6);
-            groupBox2.Location = new Point(43, 467);
+            groupBox2.Location = new Point(147, 456);
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(587, 269);
+            groupBox2.Size = new Size(737, 269);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
             groupBox2.Text = "Produto";
@@ -471,7 +471,7 @@
             // 
             groupBox3.Controls.Add(txttotal);
             groupBox3.Controls.Add(label7);
-            groupBox3.Location = new Point(749, 731);
+            groupBox3.Location = new Point(1114, 749);
             groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(3, 4, 3, 4);
@@ -505,7 +505,7 @@
             btnpagamento.FlatStyle = FlatStyle.Flat;
             btnpagamento.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnpagamento.ForeColor = Color.White;
-            btnpagamento.Location = new Point(749, 813);
+            btnpagamento.Location = new Point(1114, 831);
             btnpagamento.Margin = new Padding(3, 4, 3, 4);
             btnpagamento.Name = "btnpagamento";
             btnpagamento.Size = new Size(327, 63);
@@ -520,7 +520,7 @@
             btncancelarvenda.FlatStyle = FlatStyle.Flat;
             btncancelarvenda.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btncancelarvenda.ForeColor = Color.White;
-            btncancelarvenda.Location = new Point(1082, 813);
+            btncancelarvenda.Location = new Point(1447, 831);
             btncancelarvenda.Margin = new Padding(3, 4, 3, 4);
             btncancelarvenda.Name = "btncancelarvenda";
             btncancelarvenda.Size = new Size(283, 63);
@@ -534,7 +534,7 @@
             tabelaprodutos.AllowUserToAddRows = false;
             tabelaprodutos.AllowUserToDeleteRows = false;
             tabelaprodutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tabelaprodutos.Location = new Point(701, 167);
+            tabelaprodutos.Location = new Point(1059, 177);
             tabelaprodutos.Margin = new Padding(3, 4, 3, 4);
             tabelaprodutos.Name = "tabelaprodutos";
             tabelaprodutos.ReadOnly = true;
@@ -550,7 +550,7 @@
             statusStrip1.Location = new Point(0, 898);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new Padding(1, 0, 16, 0);
-            statusStrip1.Size = new Size(1425, 25);
+            statusStrip1.Size = new Size(1782, 25);
             statusStrip1.TabIndex = 43;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -572,7 +572,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1425, 923);
+            ClientSize = new Size(1782, 923);
             Controls.Add(statusStrip1);
             Controls.Add(tabelaprodutos);
             Controls.Add(btncancelarvenda);

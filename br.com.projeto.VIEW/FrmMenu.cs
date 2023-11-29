@@ -21,7 +21,7 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
             this.id_funcionario = id_funcionario;
             this.nivel = nivel;
             InitializeComponent();
-            
+
         }
 
         private void cadastrarClientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -230,6 +230,24 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
                 this.Dispose();
                 login.ShowDialog();
             }
+        }
+
+        private void toolStripStatusLabel1_Click_1(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string data;
+            data = DateTime.Now.ToString();
+            toolStripStatusLabel1.Text = data;
         }
     }
 }

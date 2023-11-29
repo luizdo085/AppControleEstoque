@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             menuStrip1 = new MenuStrip();
             MenuCliente = new ToolStripMenuItem();
             MenuCadastraCliente = new ToolStripMenuItem();
@@ -51,12 +52,10 @@
             MenuTrocaUsuario = new ToolStripMenuItem();
             MenuSair = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
-            txtWhats = new ToolStripStatusLabel();
-            txtYtb = new ToolStripStatusLabel();
-            toolStripStatusLabel2 = new ToolStripStatusLabel();
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             txtFuncionario = new ToolStripStatusLabel();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            timer1 = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -70,7 +69,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(7, 3, 0, 3);
-            menuStrip1.Size = new Size(1274, 39);
+            menuStrip1.Size = new Size(1539, 39);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
@@ -272,56 +271,21 @@
             statusStrip1.BackgroundImageLayout = ImageLayout.Stretch;
             statusStrip1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, txtWhats, txtYtb, toolStripStatusLabel2, toolStripStatusLabel3, txtFuncionario });
-            statusStrip1.Location = new Point(0, 574);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel3, txtFuncionario, toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 575);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new Padding(1, 0, 16, 0);
             statusStrip1.RenderMode = ToolStripRenderMode.Professional;
-            statusStrip1.Size = new Size(1274, 26);
+            statusStrip1.Size = new Size(1539, 25);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            toolStripStatusLabel1.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripStatusLabel1.ForeColor = Color.White;
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(218, 20);
-            toolStripStatusLabel1.Text = "Entrem em contato conosco ";
-            // 
-            // txtWhats
-            // 
-            txtWhats.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txtWhats.ForeColor = Color.White;
-            txtWhats.Image = Properties.Resources.whatsapp_logo;
-            txtWhats.Name = "txtWhats";
-            txtWhats.Size = new Size(34, 20);
-            txtWhats.Text = " ";
-            // 
-            // txtYtb
-            // 
-            txtYtb.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txtYtb.ForeColor = Color.White;
-            txtYtb.Image = Properties.Resources.logo_youtube;
-            txtYtb.Name = "txtYtb";
-            txtYtb.Size = new Size(39, 20);
-            txtYtb.Text = "  ";
-            // 
-            // toolStripStatusLabel2
-            // 
-            toolStripStatusLabel2.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripStatusLabel2.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            toolStripStatusLabel2.ForeColor = Color.White;
-            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            toolStripStatusLabel2.Size = new Size(370, 20);
-            toolStripStatusLabel2.Text = " Suporte de Segunda à Sexta das 9:00 à 18:00";
             // 
             // toolStripStatusLabel3
             // 
             toolStripStatusLabel3.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripStatusLabel3.ForeColor = Color.White;
             toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            toolStripStatusLabel3.Size = new Size(101, 20);
+            toolStripStatusLabel3.Size = new Size(101, 19);
             toolStripStatusLabel3.Text = "Funcionario:";
             // 
             // txtFuncionario
@@ -329,8 +293,23 @@
             txtFuncionario.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             txtFuncionario.ForeColor = Color.White;
             txtFuncionario.Name = "txtFuncionario";
-            txtFuncionario.Size = new Size(108, 20);
+            txtFuncionario.Size = new Size(108, 19);
             txtFuncionario.Text = "LuizMatheus";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripStatusLabel1.ForeColor = Color.White;
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(24, 19);
+            toolStripStatusLabel1.Text = "...";
+            toolStripStatusLabel1.Click += toolStripStatusLabel1_Click_1;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // FrmMenu
             // 
@@ -338,7 +317,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Luizinho_resized__1___1_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1274, 600);
+            ClientSize = new Size(1539, 600);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -359,10 +338,6 @@
 
         private MenuStrip menuStrip1;
         private StatusStrip statusStrip1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
-        private ToolStripStatusLabel toolStripStatusLabel2;
-        private ToolStripStatusLabel txtWhats;
-        private ToolStripStatusLabel txtYtb;
         private ToolStripStatusLabel toolStripStatusLabel3;
         public ToolStripMenuItem MenuCliente;
         public ToolStripMenuItem MenuCadastraCliente;
@@ -386,5 +361,7 @@
         private ToolStripMenuItem MenuCadastrarEntregadores;
         public ToolStripMenuItem MenuConsultarEntergadores;
         public ToolStripMenuItem MenuEntregadores;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
