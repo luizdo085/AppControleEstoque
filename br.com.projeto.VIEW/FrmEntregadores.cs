@@ -170,5 +170,10 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
 
             tabelaEntregadores.DataSource = dao.BuscarEntregadorPorNome(nome);
         }
+
+        private void btnsalvar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,12 +26,13 @@ namespace AppGASeAGUA.br.com.projeto.DAO
             try
             {       
                 //1 passo definir o cmd sql "insert into" 
-                string sql = @"insert into tb_Funcionarios(nome,cpf,email,senha,cargo,nivel_acesso,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)
-                                values (@nome,@cpf,@email,@senha,@cargo,@nivel_acesso,@telefone,@celular,@cep,@endereco,@numero,@complemento,@bairro,@cidade,@estado)";
+                string sql = @"insert into tb_Funcionarios(nome,cpf,rg,email,senha,cargo,nivel_acesso,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)
+                                values (@nome,@cpf,rg,@email,@senha,@cargo,@nivel_acesso,@telefone,@celular,@cep,@endereco,@numero,@complemento,@bairro,@cidade,@estado)";
                 //2 passo organizar o cmd sql
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
                 executacmd.Parameters.AddWithValue("@nome", obj.nome);
                 executacmd.Parameters.AddWithValue("@cpf", obj.cpf);
+                executacmd.Parameters.AddWithValue("@rg", obj.rg);
                 executacmd.Parameters.AddWithValue("@email", obj.email);
                 executacmd.Parameters.AddWithValue("@senha", obj.senha);
                 executacmd.Parameters.AddWithValue("@cargo", obj.cargo);

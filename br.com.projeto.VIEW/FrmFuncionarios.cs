@@ -195,5 +195,94 @@ namespace AppGASeAGUA.br.com.projeto.VIEW
         {
 
         }
+
+        private void btnsalvar_Click_1(object sender, EventArgs e)
+        {
+            //1 passo receber dados dentro do objeto modelo do cliente
+            Funcionarios obj = new Funcionarios();
+
+            obj.nome = txtnome.Text;
+            obj.cpf = txtcpf.Text;
+            obj.rg = txtrg.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cmbestado.Text;
+            obj.complemento = txtcomplemento.Text;
+            obj.cargo = cmbcargo.Text;
+            obj.nivel_acesso = cmbnivelacesso.Text;
+
+            //2 passo criar um objeto da classe clientedao e chamar o metodo cadastrar cliente
+            FuncionariosDAO dao = new FuncionariosDAO();
+            dao.CadastrarFuncionario(obj);
+
+            //Limpar tela
+            new Helpers().LimparTela(this);
+
+            //atualizar tabela
+            tabelafuncionarios.DataSource = dao.ListarFuncionarios();
+        }
+
+        private void btnnovo_Click_1(object sender, EventArgs e)
+        {
+            new Helpers().LimparTela(this);
+        }
+
+        private void btnexcluir_Click_1(object sender, EventArgs e)
+        {
+            //botão excluir
+            Funcionarios obj = new Funcionarios();
+
+            //pegar o codigo
+            obj.id = int.Parse(txtcodigo.Text);
+
+            FuncionariosDAO dao = new FuncionariosDAO();
+
+            dao.ExcluirFuncionario(obj);
+
+            //Limpar tela
+            new Helpers().LimparTela(this);
+
+            //atualizar tabela
+            tabelafuncionarios.DataSource = dao.ListarFuncionarios();
+        }
+
+        private void btneditar_Click_1(object sender, EventArgs e)
+        {
+            //1 passo receber dados dentro do objeto modelo do cliente
+            Funcionarios obj = new Funcionarios();
+
+            obj.id = int.Parse(txtcodigo.Text);
+            obj.nome = txtnome.Text;
+            obj.cpf = txtcpf.Text;
+            obj.rg = txtrg.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cmbestado.Text;
+            obj.complemento = txtcomplemento.Text;
+            obj.cargo = cmbcargo.Text;
+            obj.nivel_acesso = cmbnivelacesso.Text;
+
+            //2 passo criar um objeto da classe clientedao e chamar o metodo cadastrar cliente
+            FuncionariosDAO dao = new FuncionariosDAO();
+            dao.AlterarFuncionario(obj);
+
+            //Limpar tela
+            new Helpers().LimparTela(this);
+
+            //atualizar tabela
+            tabelafuncionarios.DataSource = dao.ListarFuncionarios();
+        }
     }
 }
